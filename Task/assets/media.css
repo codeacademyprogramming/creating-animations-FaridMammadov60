@@ -1,0 +1,132 @@
+*{
+    margin-bottom: 20px;
+}
+.div{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transition: 5s;
+    
+}
+.div:hover{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+}
+img{
+    display: block;
+}
+.img{
+    width: 150px;
+    height: 150px;
+    transition: 15s;
+    
+    }
+.img:hover {
+    transform: translate(1000px);
+}
+    
+.img2{
+        width: 10px;
+        height: 10px;
+        transition: 5s;
+    }
+.img2:hover{
+        width: 200px;
+        height: 200px;
+    }
+
+button{ 
+        
+        background-color: yellow;
+        color:black;
+    }
+button:hover{
+        background-color: green;
+    }
+.yo{
+width: 40px;
+height: 40px;
+color: black;
+background-color: grey;
+transform: translate(-30px);
+transition: 3s;
+    }
+.yo:hover{
+width: 200px;
+text-align: center;
+}
+.user{
+    position: relative;
+    display: inline-block;
+}
+.user .span{
+    visibility: hidden;
+    width: 170px;
+    background-color: green;
+    color:white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 35%;
+    margin-left: -60px;
+
+}
+.user .span::after{
+content: "";
+position: absolute;
+bottom: 100%;
+left: 5%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: transparent transparent black transparent;
+}
+.user:hover .span{
+visibility: visible;
+transition: 3s;
+}
+
+.div2{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transition: 5s;
+    animation-name: rotate;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;   
+    
+}
+@keyframes nam{
+    from{
+        width: 50px;
+    }
+    to{
+        width: 500px;
+    }
+}
+
+@keyframes rotate{
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(200px);
+        background-color: yellow;
+    }
+    50%{
+        transform: translate(200px,200px);
+        background-color: blue;
+    }
+    75% {
+        transform: translate(0,200px);
+        background-color: green;
+    }
+    100% {
+        transform: translate(0);
+    }
+
+}
